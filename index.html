@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cálculo de IMC</title>
+    <meta charset="utf-8">
+
+    <!-- Link folha de estilo -->
+    <link rel="stylesheet" type="text/css" href="/estilo.css">
+
+    <!-- Link arquivo JS -->
+    <script src="/IMC - JS/calculo_imc.js"></script>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Calculadora de IMC</h1>
+
+        <div class="formulario">
+
+            <form>
+
+                <label>Insira seu nome:</label>
+                <input id="nome" type="text">
+
+                <br><br>
+
+                <label>Insira sua altura (em centímetros):</label>
+                <input id="altura" type="text">
+
+                <br><br>
+
+                <label>Insira seu peso (kg):</label>
+                <input id="peso" type="text">
+
+            </form>
+
+            <button type="submit" onclick="calcula_imc(); addAnimate()">Calcular</button>
+
+            <button type="submit" onclick="limpaCampos()">Limpar campos</button>
+
+        </div>
+
+    </div>
+
+    <div class="resultado">
+        <h2 id="resultado"></h2>    
+    </div>
+
+</body>
+
+</html>
